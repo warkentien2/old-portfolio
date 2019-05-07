@@ -1,0 +1,63 @@
+body {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #1a1c2f;
+}
+
+.media-image {
+  width: 5em;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.header {
+  padding: 5em 0 3.5em;
+}
+
+.inner-container {
+  margin: auto;
+}
+
+.subtitle {
+  position: absolute;
+  top: -2.5em;
+}
+
+.banners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5em;
+}
+
+.banner {
+  position: relative;
+  width: 300px;
+  height: 250px;
+}
+
+.banner iframe {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+}
