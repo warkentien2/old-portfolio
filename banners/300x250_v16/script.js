@@ -162,7 +162,10 @@
           ease: Power3.easeIn
       }, "frame4+=2.45").to("#cta", .5, {
           autoAlpha: 1
-      }, "frame4+=3.9").add(o), r.timeScale(1.1)
+      }, "frame4+=3.9").add(o)
+      .to('.description', 0.75, {
+        autoAlpha: 1, ease: Power2.easeOut
+    }, '+=2.5'), r.timeScale(1.1)
   }, e.tl = r;
   window.init = function() {
     n.style.opacity = 1, t(),  

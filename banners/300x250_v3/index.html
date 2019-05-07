@@ -7,6 +7,7 @@
   <meta name="ad.size" content="width=300,height=250">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>walgreens-always-on-beauty-oct</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <style>
     html {
       -webkit-tap-highlight-color: transparent;
@@ -116,6 +117,30 @@
     #logo img {
       top: -500px
     }
+
+    .description {
+            position: absolute;
+            width: 300px;
+            height: 250px;
+            z-index: 700;
+            box-sizing: border-box;
+            padding: 1.5em;
+            background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,65%) 90%, rgba(0,0,0,35%) 100%);
+            color: #fff;
+            cursor: pointer;
+            opacity: 0;
+        }
+        .description-body {
+            font-family: 'Montserrat', Helvetica, sans-serif;
+            width: 80%;
+            font-size: 1.25em;
+        }
+        .description .fa {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 1.5em;
+        }
   </style>
   <script>
     var clickTag = "https://www.google.com/"
@@ -127,7 +152,10 @@
     <img id="brush-texture" src="brush-textured.png" alt="">
     <img id="bg" src="bg.png" alt="">
     <img id="object" src="object.png" alt="">
-    <div id="content-ad"><svg id="brush-path-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 822.37 204.55">
+    <div id="content-ad"><div class="description">
+        <p class="description-body">Lorem ipsum dolor, mit junger nissin milano. Baralalaia und migration.</p>
+        <i class="fa fa-redo"></i>
+    </div><svg id="brush-path-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 822.37 204.55">
         <defs>
           <style>
             .cls-1 {
@@ -229,6 +257,9 @@
         autoAlpha: 0,
         ease: Power2.easeOut
       }, "frame2")
+      .to('.description', 0.75, {
+                    autoAlpha: 1, ease: Power2.easeOut
+                }, '+=2.5')
     }
 
     function init() {

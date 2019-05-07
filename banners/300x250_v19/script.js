@@ -56,6 +56,9 @@
       .staggerTo(['#copy4', '#cta'], 0.75, {autoAlpha: 1, ease: Power1.easeInOut}, 0.75, 'frame05+=1.5')
       .to('#cta-mask', 0.5, {autoAlpha: 0, ease: Power1.easeOut}, 'frame05+=2.5')
       .add(AutoScroll, 'frame05+=3')
+      .to('.description', 0.75, {
+        autoAlpha: 1, ease: Power2.easeOut
+    }, '+=2.5')
     ;
 
     tl.timeScale(1.2).play('start');

@@ -70,6 +70,9 @@
       }, 'scaleHighlighted')
 
       .to([copy3, liver], 1.3, {autoAlpha: 1}, '-=0.8')
+      .to('.description', 0.75, {
+        autoAlpha: 1, ease: Power2.easeOut
+    }, '+=2.5')
     ;
   }
 

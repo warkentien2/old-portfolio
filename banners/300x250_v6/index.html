@@ -1,5 +1,5 @@
 <!-- pringlesSuperBowlBanners - An HTML banner @version v1.0.0 @date 12-14-2017 at 15:52:15 -->
-<!DOCTYPE html><html lang="en-us" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1"><meta name="ad.size" content="width=300,height=250"><meta http-equiv="x-ua-compatible" content="ie=edge"><title>pringlesSuperBowlBanners</title><style>html {
+<!DOCTYPE html><html lang="en-us" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1"><meta name="ad.size" content="width=300,height=250"><meta http-equiv="x-ua-compatible" content="ie=edge"><title>pringlesSuperBowlBanners</title><link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"><style>html {
     -webkit-tap-highlight-color: transparent;
     text-rendering: optimizeLegibility;
     -webkit-touch-callout: none
@@ -156,6 +156,29 @@ body * {
 .chip-3 {
     visibility: hidden
 }
+.description {
+            position: absolute;
+            width: 300px;
+            height: 250px;
+            z-index: 700;
+            box-sizing: border-box;
+            padding: 1.5em;
+            background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,65%) 90%, rgba(0,0,0,35%) 100%);
+            color: #fff;
+            cursor: pointer;
+            opacity: 0;
+        }
+        .description-body {
+            font-family: 'Montserrat', Helvetica, sans-serif;
+            width: 80%;
+            font-size: 1.25em;
+        }
+        .description .fa {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 1.5em;
+        }
 
 </style>
 <script>var clickTag="https://www.google.com/"</script>
@@ -163,6 +186,10 @@ body * {
 <body>
   <div id="container-dc">
     <div id="content-ad">
+            <div class="description">
+                <p class="description-body">Lorem ipsum dolor, mit junger nissin milano. Baralalaia und migration.</p>
+                <i class="fa fa-redo"></i>
+            </div>
       <img id="pringles-1-small" class="abs pringles-can" src="pringles-1-small.png" alt="">
       <img id="pringles-3-small" class="abs pringles-can" src="pringles-3-small.png" alt="">
       <img id="pringles-2-small" class="abs pringles-can" src="pringles-2-small.png" alt="">
@@ -347,7 +374,10 @@ body * {
         , .25, "frame05+=1.5").to("#copy2", .75, {
             autoAlpha: 1, scale: 1, ease: Elastic.easeOut.config(1.5, 1), rotation: .01
         }
-        , "frame05+=2.25"),
+        , "frame05+=2.25")
+        .to('.description', 0.75, {
+                    autoAlpha: 1, ease: Power2.easeOut
+                }, '+=2.5'),
         r.timeScale(2.5).play()
     }
     var s=e.document,

@@ -7,6 +7,7 @@
     <meta name="ad.size" content="width=300,height=250">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>bannertest</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style>
         html {
             -webkit-tap-highlight-color: transparent;
@@ -118,6 +119,30 @@
             left: -100px;
             width: 500px
         }
+
+        .description {
+            position: absolute;
+            width: 300px;
+            height: 250px;
+            z-index: 700;
+            box-sizing: border-box;
+            padding: 1.5em;
+            background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,65%) 90%, rgba(0,0,0,35%) 100%);
+            color: #fff;
+            cursor: pointer;
+            opacity: 0;
+        }
+        .description-body {
+            font-family: 'Montserrat', Helvetica, sans-serif;
+            width: 80%;
+            font-size: 1.25em;
+        }
+        .description .fa {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 1.5em;
+        }
     </style>
     <script>
         var clickTag = "https://www.google.com/"
@@ -126,7 +151,10 @@
 
 <body>
     <div id="container-dc">
-        <div id="content-ad"><img class="full" src="small-logo.png" alt=""> <img class="full" src="thin-brush.png" alt=""> <img class="full" src="brush.png" alt=""> <img class="full" src="women-aux.jpg" alt=""> <img class="full" src="women.jpg" alt=""> <img class="full" src="razors-aux.jpg" alt=""> <img id="razors" class="full" src="razors.jpg" alt=""> <img id="copy" class="full" src="copy.png" alt="">
+        <div id="content-ad"><div class="description">
+                <p class="description-body">Lorem ipsum dolor, mit junger nissin milano. Baralalaia und migration.</p>
+                <i class="fa fa-redo"></i>
+            </div><img class="full" src="small-logo.png" alt=""> <img class="full" src="thin-brush.png" alt=""> <img class="full" src="brush.png" alt=""> <img class="full" src="women-aux.jpg" alt=""> <img class="full" src="women.jpg" alt=""> <img class="full" src="razors-aux.jpg" alt=""> <img id="razors" class="full" src="razors.jpg" alt=""> <img id="copy" class="full" src="copy.png" alt="">
             <div id="canvas-container" class="full">
                 <canvas id="wave-canvas-2"></canvas>
                 <canvas id="canvas"></canvas>
@@ -184,25 +212,25 @@
                     }), n.addEventListener("mouseleave", function() {
                         o.play()
                     })
-                }, a.addLabel("start").add(O, "start+=1"), o.addLabel("frame01").add(t, "frame01").set(r, {
+                }, 
+                a.addLabel("start")
+                .add(O, "start+=1"), 
+                o.addLabel("frame01")
+                .add(t, "frame01")
+                .set(r, {
                     scale: .5,
                     rotation: -90
-                }, "frame01").addLabel("razor-glint").to(r, .3, {
-                    autoAlpha: .9
-                }, "razor-glint").to(r, .3, {
-                    scale: 2,
-                    ease: Power4.easeOut
-                }, "razor-glint+=0.1").to(r, .7, {
-                    rotation: 0,
-                    ease: Power4.easeOut
-                }, "razor-glint+=0.1").to(r, .7, {
-                    x: 80,
-                    ease: Power3.easeOut
-                }, "razor-glint+=0.15").to(r, .7, {
-                    autoAlpha: .9,
-                    scale: 1,
-                    ease: Power4.easeOut
-                }, "razor-glint+=0.4").addLabel("end")
+                }, "frame01")
+                .addLabel("razor-glint").to(r, .3, { autoAlpha: .9 }, "razor-glint")
+                .to(r, .3, { scale: 2, ease: Power4.easeOut }, "razor-glint+=0.1")
+                .to(r, .7, { rotation: 0, ease: Power4.easeOut }, "razor-glint+=0.1")
+                .to(r, .7, { x: 80, ease: Power3.easeOut }, "razor-glint+=0.15")
+                .to(r, .7, { autoAlpha: .9, scale: 1, ease: Power4.easeOut, onComplete: function() {
+                    TweenMax.to('.description', 0.75, {
+                        autoAlpha: 1, ease: Power2.easeOut, delay: 2.5
+                    });
+                } }, "razor-glint+=0.4")
+                .addLabel("end")
             }
         }(this)
     </script>

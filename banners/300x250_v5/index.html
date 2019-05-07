@@ -7,6 +7,7 @@
   <meta name="ad.size" content="width=300,height=250">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>walgreens-pr-holiday-banners</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <style>
     html {
       -webkit-tap-highlight-color: transparent;
@@ -131,6 +132,29 @@
       top: -102px;
       transform: rotate(5deg)
     }
+    .description {
+            position: absolute;
+            width: 300px;
+            height: 250px;
+            z-index: 700;
+            box-sizing: border-box;
+            padding: 1.5em;
+            background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,65%) 90%, rgba(0,0,0,35%) 100%);
+            color: #fff;
+            cursor: pointer;
+            opacity: 0;
+        }
+        .description-body {
+            font-family: 'Montserrat', Helvetica, sans-serif;
+            width: 80%;
+            font-size: 1.25em;
+        }
+        .description .fa {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 1.5em;
+        }
   </style>
   <script>
     var clickTag = "https://www.google.com/"
@@ -139,7 +163,10 @@
 
 <body>
   <div id="container-dc">
-    <div id="content-ad"><img class="full-banner" src="bg.png" alt="">
+    <div id="content-ad"><div class="description">
+        <p class="description-body">Lorem ipsum dolor, mit junger nissin milano. Baralalaia und migration.</p>
+        <i class="fa fa-redo"></i>
+    </div><img class="full-banner" src="bg.png" alt="">
       <div id="bottom-lid" class="full-banner"><img class="full-container" src="lid.png" alt=""></div>
       <div id="top-lid" class="full-banner"><img class="full-container" src="lid.png" alt=""></div>
       <div class="full-banner left-mask mask">
@@ -240,7 +267,9 @@
         xPercent: 85,
         ease: Power1.easeOut,
         rotation: .01
-      }, "frame2"), o.to(e, 3, {
+      }, "frame2").to('.description', 0.75, {
+                    autoAlpha: 1, ease: Power2.easeOut
+                }, '+=2.5'), o.to(e, 3, {
         progress: 1,
         ease: Power1.easeIn
       }), o
