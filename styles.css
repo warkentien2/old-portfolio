@@ -3,7 +3,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #bbb;
+  background: #dadcef;
   color: #1a1c2f;
 }
 
@@ -19,7 +19,14 @@ h2 {
 }
 
 h3 {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 1.25em;
+}
+
+.fab {
+  color: #1a1c2f;
+  font-size: 1.25em;
+  padding-top: 0.25em;
 }
 
 .media-image {
@@ -30,18 +37,29 @@ h3 {
 }
 
 .header {
-  padding: 5em 0 3.5em;
+  padding: 5em 0 0;
   max-width: 900px;
   margin: auto;
 }
 
-.inner-container {
+.banner-section-summary {
+  width: 100%;
+  padding: 2.5em 0 3.5em;
+  max-width: 900px;
   margin: auto;
 }
 
-.subtitle {
-  position: absolute;
-  top: -2.5em;
+.banner-section-summary ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+.banner-section-summary p:nth-child(2) {
+  margin-bottom: 0.5em;
+}
+
+.inner-container {
+  margin: auto;
 }
 
 .banners {
@@ -70,8 +88,4 @@ h3 {
   position: absolute;
   width: 300px;
   height: 250px;
-}
-
-.container {
-
 }
