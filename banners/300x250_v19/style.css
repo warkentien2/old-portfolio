@@ -341,7 +341,7 @@ body * {
 .description-body {
   font-family: 'Montserrat', Helvetica, sans-serif;
   width: 80%;
-  font-size: 1.25em;
+  font-size: 1em
 }
 .description .fa {
   position: absolute;

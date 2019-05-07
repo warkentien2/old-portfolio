@@ -16,7 +16,7 @@ body * {
 
 #container-dc {
   background-color: #fff;
-  border: 1px solid #999;
+  border: 1px solid #666;
   box-sizing: border-box;
   height: 250px;
   left: 0;
@@ -117,7 +117,7 @@ img {
 .description-body {
   font-family: 'Montserrat', Helvetica, sans-serif;
   width: 80%;
-  font-size: 1.25em;
+  font-size: 1em
 }
 .description .fa {
   position: absolute;
