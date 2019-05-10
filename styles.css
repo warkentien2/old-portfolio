@@ -62,6 +62,12 @@ h3 {
   margin: auto;
 }
 
+.note {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
 .banners {
   display: flex;
   justify-content: center;
