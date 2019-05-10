@@ -36,7 +36,7 @@
     .to('#products', 0.5, {y: 0, ease: Power1.easeOut}, 'frame3+=0.5')
     .to('#white-band', 0.5, {y: 0, ease: Power1.easeOut}, 'frame3+=0.6')
     .to('#logo-bottom', 1, {x: 0, ease: Power3.easeOut}, 'frame3+=0.8')
-    .to('.description', 0.75, {
+    .to('.description', 1, {
       autoAlpha: 1, ease: Power2.easeOut
   }, '+=2.5')
     ;

@@ -13,7 +13,7 @@
             z-index: 700;
             box-sizing: border-box;
             padding: 1.5em;
-            background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.85) 80%, rgba(0,0,0,45%) 100%);
+            background: linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 75%, rgba(0,0,0,25%) 75%, rgba(0,0,0,25%) 100%);
             color: #fff;
             cursor: pointer;
             opacity: 0;
@@ -32,7 +32,7 @@
         </style><script>var clickTag="https://www.google.com/"</script></head><body><div id="container-dc"><div id="content-ad"><div class="description">
                 <p class="description-body">Created the filmstrip from a video campaign.</p>
                 <i class="fa fa-redo"></i>
-            </div><div id="filmstrip-wrapper"><img id="filmstrip" src="./filmstrip.jpg" alt=""></div><img id="partial-shadow-mask" class="abs" src="./partial-shadow-mask.png" alt=""> <img class="abs" src="./winter-mask.png" alt=""> <img id="blur" class="abs" src="./background-mask.jpg" alt=""> <img id="ribbon" class="abs" src="./ribbon.jpg" alt=""> <img id="copy1" class="abs" src="./copy1.png" alt=""> <img id="copy2" class="abs" src="./copy2.png" alt=""><div id="shine-wrapper"><img id="shine" src="./shine.png" alt=""></div></div><a href="javascript:window.open(window.clickTag); void(0);" id="background-exit"></a></div><script src="./https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+            </div><div id="filmstrip-wrapper"><img id="filmstrip" src="./filmstrip.jpg" alt=""></div><img id="partial-shadow-mask" class="abs" src="./partial-shadow-mask.png" alt=""> <img class="abs" src="./winter-mask.png" alt=""> <img id="blur" class="abs" src="./background-mask.jpg" alt=""> <img id="ribbon" class="abs" src="./ribbon.jpg" alt=""> <img id="copy1" class="abs" src="./copy1.png" alt=""> <img id="copy2" class="abs" src="./copy2.png" alt=""><div id="shine-wrapper"><img id="shine" src="./shine.png" alt=""></div></div><a href="javascript:window.open(window.clickTag); void(0);" id="background-exit"></a></div><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
             <script>!function(e,t){
               "use strict";
               function a(){
@@ -56,7 +56,7 @@
                 .add(a,"frame01+=4").to("#filmstrip-wrapper",3,{y:-10,ease:Power2.easeInOut,rotation:.01},"frame01+=3.75")
                 .addLabel("frame02","frame01+=4.25").to(["#copy2","#ribbon"],1.75,{autoAlpha:1,ease:Power2.easeOut},"frame02+=2")
                 .add(n,"frame02+=2.5")
-                .to('.description', 0.75, {
+                .to('.description', 1, {
                     autoAlpha: 1, ease: Power2.easeOut
                 }, '+=2.5')
               }

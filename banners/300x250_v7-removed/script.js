@@ -43,7 +43,7 @@ g=function(){
   c(.5,function(){n("#cta-arrow",e,{x:0,ease:Power0.easeInOut}),
   n("#cta-arrow",e,{delay:e,x:2,ease:Power0.easeInOut}),
   n("#cta-arrow",e,{delay:2*e,x:0,ease:Power0.easeInOut, onComplete: function(){
-    TweenLite.to('.description', 0.75, {
+    TweenLite.to('.description', 1, {
       autoAlpha: 1, ease: Power2.easeOut, delay: 2.5
   })
   }})

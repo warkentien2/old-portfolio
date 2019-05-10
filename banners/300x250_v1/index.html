@@ -187,7 +187,7 @@
             z-index: 700;
             box-sizing: border-box;
             padding: 1.5em;
-            background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.85) 80%, rgba(0,0,0,45%) 100%);
+            background: linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 75%, rgba(0,0,0,25%) 75%, rgba(0,0,0,25%) 100%);
             color: #fff;
             cursor: pointer;
             opacity: 0;
@@ -266,7 +266,7 @@
             </svg> <img id="razor-shadow" src="./razor_shadow.png" alt=""> <img id="razor-image" src="./razor.png" alt=""> <img id="razor-glint" src="./glint.png" alt=""></div>
         <a href="javascript:window.open(window.clickTag); void(0);" id="background-exit"></a>
     </div>
-    <script src="./https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script>
         ! function(e) {
             "use strict";
@@ -339,7 +339,7 @@
                     x: 0,
                     rotation: .01,
                     ease: Elastic.easeOut.config(1.5, .3)
-                }).to('.description', 0.75, {
+                }).to('.description', 1, {
                     autoAlpha: 1, ease: Power2.easeOut
                 }, '+=2.5'), r(u, 1, {
                     strokeDashoffset: 0

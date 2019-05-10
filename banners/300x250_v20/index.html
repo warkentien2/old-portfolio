@@ -127,7 +127,7 @@
             z-index: 700;
             box-sizing: border-box;
             padding: 1.5em;
-            background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.85) 80%, rgba(0,0,0,45%) 100%);
+            background: linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 75%, rgba(0,0,0,25%) 75%, rgba(0,0,0,25%) 100%);
             color: #fff;
             cursor: pointer;
             opacity: 0;
@@ -165,7 +165,7 @@
             <div id="glint3" class="full glint"><img class="razor-glint" src="./glint.png" alt=""></div>
         </div>
     </div>
-    <script src="./https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script>
         "use strict";
         ! function(e) {
@@ -226,7 +226,7 @@
                 .to(r, .7, { rotation: 0, ease: Power4.easeOut }, "razor-glint+=0.1")
                 .to(r, .7, { x: 80, ease: Power3.easeOut }, "razor-glint+=0.15")
                 .to(r, .7, { autoAlpha: .9, scale: 1, ease: Power4.easeOut, onComplete: function() {
-                    TweenMax.to('.description', 0.75, {
+                    TweenMax.to('.description', 1, {
                         autoAlpha: 1, ease: Power2.easeOut, delay: 2.5
                     });
                 } }, "razor-glint+=0.4")

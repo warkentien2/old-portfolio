@@ -19,7 +19,7 @@ frame03=function(){
 shineFx=function(){
   ts(shine,{x:0}),
   tt(shine,1.5,{ease:Power1.easeOut,x:200,rotation:.01, onComplete: function(){
-    TweenLite.to('.description', 0.75, {
+    TweenLite.to('.description', 1, {
       autoAlpha: 1, ease: Power2.easeOut, delay: 2.5
   })
   }})

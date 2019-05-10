@@ -71,7 +71,7 @@
           autoAlpha: 1,
           ease: Power2.easeInOut
       }, "glow-=1.25")
-      .to('.description', 0.75, {
+      .to('.description', 1, {
         autoAlpha: 1, ease: Power2.easeOut
     }, '+=2.5')
   }

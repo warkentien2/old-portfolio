@@ -13,7 +13,7 @@
             z-index: 700;
             box-sizing: border-box;
             padding: 1.5em;
-            background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.85) 80%, rgba(0,0,0,45%) 100%);
+            background: linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 75%, rgba(0,0,0,25%) 75%, rgba(0,0,0,25%) 100%);
             color: #fff;
             cursor: pointer;
             opacity: 0;
@@ -34,7 +34,7 @@
                 <i class="fa fa-redo"></i>
             </div><img id="background" class="full" src="./background.jpg" alt=""><div id="mask" class="full mask"><img class="full shield" src="./shield.png" alt=""> <img id="spray" class="full" src="./spray.png" alt=""> <img id="background-mask" class="full" src="./background-mask.png" alt=""></div>
             <img class="full shield" src="./shield-top.png" alt=""> <img id="foreground" class="full" src="./foreground.png" alt=""></div><a href="javascript:window.open(window.clickTag); void(0);" id="background-exit-dc"></a></div>
-            <script src="./https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
             <script>
               !function(t,e){
                 "use strict";
@@ -45,7 +45,7 @@
                     .addLabel("frame01")
                     .to("#spray",7.5,{x:6300,rotation:.01,autoAlpha:.3,ease:Power2.easeInOut},"frame01")
                     .to(".shield",4.5,{autoAlpha:1,ease:Power2.easeIn},"frame01")
-                    .to('.description', 0.75, {
+                    .to('.description', 1, {
                     autoAlpha: 1, ease: Power2.easeOut
                 }, '+=2.5')
                   }

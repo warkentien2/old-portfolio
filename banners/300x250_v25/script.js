@@ -66,7 +66,7 @@
 
       .to([calendarContainer, copy2], 0.7, {opacity: 0}, '+=2.3')
       .to([copy3, liver], 0.7, {opacity: 1})
-      .to('.description', 0.75, {
+      .to('.description', 1, {
         autoAlpha: 1, ease: Power2.easeOut
     }, '+=2.5')
     ;

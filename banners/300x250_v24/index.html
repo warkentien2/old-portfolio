@@ -13,7 +13,7 @@
             z-index: 700;
             box-sizing: border-box;
             padding: 1.5em;
-            background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.85) 80%, rgba(0,0,0,45%) 100%);
+            background: linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 75%, rgba(0,0,0,25%) 75%, rgba(0,0,0,25%) 100%);
             color: #fff;
             cursor: pointer;
             opacity: 0;
@@ -37,7 +37,7 @@
             <img id="product2" class="full" src="./product2.png" alt=""> <img id="product3" class="full" src="./product3.png" alt=""><div id="copy2-a" class="full mask"><img id="copy2-a-img" class="copy2" src="./copy2.png" alt=""></div>
             <div id="copy2-b" class="full mask"><img id="copy2-b-img" class="copy2" src="./copy2.png" alt=""></div><img id="legal" class="full" src="./legal.png" alt=""> <img id="copy1" class="full" src="./copy1.png" alt=""> 
             <img id="logo" class="full" src="./wagLogo.png" alt=""><div id="cta"><img id="cta-txt" src="./ctaTxt.png" alt=""></div></div><a href="javascript:window.open(window.clickTag); void(0);" id="background-exit-dc"></a></div>
-            <script src="./https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
             <script>
               !function(e,t){
                 "use strict";
@@ -56,7 +56,7 @@
                   .from(f,.5,{alpha:0,ease:Power3.easeOut},"frame02+=0.75")
                   .staggerTo([i,u],.5,{autoAlpha:1,y:0,ease:Power1.easeOut},.125,"frame02+=0.75")
                   .to(c,.75,{autoAlpha:1,ease:Power3.easeOut},"frame02+=1.75")
-                  .to('.description', 0.75, {
+                  .to('.description', 1, {
                     autoAlpha: 1, ease: Power2.easeOut
                 }, '+=2.5')
                 }

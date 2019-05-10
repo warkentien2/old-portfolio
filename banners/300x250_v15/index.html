@@ -7,7 +7,7 @@
             z-index: 700;
             box-sizing: border-box;
             padding: 1.5em;
-            background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.85) 80%, rgba(0,0,0,45%) 100%);
+            background: linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 75%, rgba(0,0,0,25%) 75%, rgba(0,0,0,25%) 100%);
             color: #fff;
             cursor: pointer;
             opacity: 0;
@@ -33,7 +33,7 @@
               <div id="page-17" class="page mask"><img class="abs page-img" src="./pages-36q.jpg" alt=""></div><div id="page-18" class="page mask"><img class="abs page-img" src="./pages-36q.jpg" alt=""> <img class="copy abs" src="./page18-copy.png" alt=""></div><div id="page-19" class="page mask"><img class="abs page-img" src="./pages-36q.jpg" alt=""> <img class="copy abs" src="./page19-copy.png" alt=""></div><div id="final-page" class="page mask"><div id="final-frame" class="abs-banner">
                 <img id="final-image" class="abs" src="./final-page.jpg" alt=""><div id="cta-glow" class="abs mask"><img class="abs spritesheet" src="./spritesheet.png" alt=""></div><div id="cta" class="abs mask"><img class="abs spritesheet" src="./spritesheet.png" alt=""></div><div id="final-copy" class="abs mask"><img class="abs spritesheet" src="./spritesheet.png" alt=""></div></div></div><div id="printer-shadow" class="abs mask"><img class="abs spritesheet" src="./spritesheet.png" alt=""></div>
                 <div id="printer-top" class="abs mask"><img class="abs-banner" src="./printer.jpg" alt=""> <img class="abs-banner" src="./canon-logo.png" alt=""></div></div><a href="javascript:window.open(window.clickTag); void(0);" id="background-exit"></a></div>
-            <script src="./https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
             <script>
               "use strict";
               var tl=new TimelineLite,
@@ -93,7 +93,7 @@
                 .add(handleHover,"frame02")
                 .to("#final-page",1,{x:-pageOffsetX,y:-pageOffsetY,width:"300px",height:"250px",ease:Power2.easeInOut,rotation:.01},"frame02")
                 .to("#final-frame",1,{x:pageOffsetX,y:pageOffsetY,ease:Power2.easeInOut,rotation:.01},"frame02")
-                .to('.description', 0.75, {
+                .to('.description', 1, {
                     autoAlpha: 1, ease: Power2.easeOut
                 }, '+=2.5')
               }

@@ -53,7 +53,7 @@ function s(){
   l("#copy-4-snack-aisle",.1,{delay:3.39,width:194}),
   l("#copy-4-snack-aisle",.1,{delay:3.41,width:204}),
   l("#copy-4-snack-aisle",.1,{delay:3.45,width:214}),
-  l('.description', 0.75, {
+  l('.description', 1, {
     autoAlpha: 1, ease: Power2.easeOut, delay: 5.7
   })
 }{

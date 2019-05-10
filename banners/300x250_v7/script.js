@@ -163,7 +163,7 @@
       }, "frame4+=2.45").to("#cta", .5, {
           autoAlpha: 1
       }, "frame4+=3.9").add(o)
-      .to('.description', 0.75, {
+      .to('.description', 1, {
         autoAlpha: 1, ease: Power2.easeOut
     }, '+=2.5'), r.timeScale(1.1)
   }, e.tl = r;

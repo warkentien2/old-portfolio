@@ -139,7 +139,7 @@
             z-index: 700;
             box-sizing: border-box;
             padding: 1.5em;
-            background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.85) 80%, rgba(0,0,0,45%) 100%);
+            background: linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 75%, rgba(0,0,0,25%) 75%, rgba(0,0,0,25%) 100%);
             color: #fff;
             cursor: pointer;
             opacity: 0;
@@ -188,7 +188,7 @@
       <div id="bow-knot" class="full-container mask"><img class="full-banner" src="./bow-knot.png" alt=""></div>
     </div>
   </div>
-  <script src="./https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
   <script>
     "use strict";
     var tl = new TimelineLite,
@@ -267,7 +267,7 @@
         xPercent: 85,
         ease: Power1.easeOut,
         rotation: .01
-      }, "frame2").to('.description', 0.75, {
+      }, "frame2").to('.description', 1, {
                     autoAlpha: 1, ease: Power2.easeOut
                 }, '+=2.5'), o.to(e, 3, {
         progress: 1,

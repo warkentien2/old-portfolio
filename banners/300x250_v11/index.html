@@ -95,7 +95,7 @@
             z-index: 700;
             box-sizing: border-box;
             padding: 1.5em;
-            background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.85) 80%, rgba(0,0,0,45%) 100%);
+            background: linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 75%, rgba(0,0,0,25%) 75%, rgba(0,0,0,25%) 100%);
             color: #fff;
             cursor: pointer;
             opacity: 0;
@@ -126,7 +126,7 @@
             <div id="mask-wrapper" class="full-banner mask"><img id="bubbles" class="full-container" src="./bubbles.png" alt=""> <img class="full-container" src="./mask.png" alt=""></div><img id="logo" src="./logo.png" alt="" class="full-banner">
             <div id="coin-compass" class="full-banner"><img id="coin" src="./coin.png" alt="" class="full-banner"></div><img id="capncola" src="./capncola.png" alt="" class="full-banner"> <img id="capmorgan" src="./capmorgan.png" alt="" class="full-banner"> <img id="new" src="./new.png" alt="" class="full-banner"> <img id="cta" src="./cta.png" alt="" class="full-banner"></div>
     </div>
-    <script src="./https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script>
         "use strict";
         var tl = new TimelineLite,
@@ -168,7 +168,7 @@
                 yPercent: 0,
                 ease: Power2.easeOut
             }, .25, "frame1+=1.375")
-            .to('.description', 0.75, {
+            .to('.description', 1, {
                     autoAlpha: 1, ease: Power2.easeOut
                 }, '+=2.5')
         }
